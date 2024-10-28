@@ -625,8 +625,13 @@ def motor_independent_test(z):
     except Exception as e:
         print('TEST FAILED:', e)  
         return
+
+    # ---------------------------------
         
 #     TODO: print('TEST PASSED: Moving onto Gyroscope Motor test...')
+
+    # ---------------------------------
+    
     result_array[z] = 1
     light.color(light.POWER, color.GREEN)
     print('TEST PASSED: TESTING COMPLETE!')
