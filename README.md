@@ -1,4 +1,4 @@
 # Lego-Spike-Test-Rig
 Rig to check sensor and motor performance on the LEGO SPIKE
 
-![SPIKE Firmware Testing Rig](https://github.com/user-attachments/assets/c9f36c0d-4070-4547-83db-6d121b842b16)
+![SPIKE Firmware Testing Rig (1)](https://github.com/user-attachments/assets/356f2877-520b-40d7-821e-909eb007b1b6)
