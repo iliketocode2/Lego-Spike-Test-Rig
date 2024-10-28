@@ -65,6 +65,12 @@ def intro(z):
     print('TEST PASSED: Moving onto port test...')
 
 
+
+"""
+    Function Name: hub_port_test
+    Function Purpose: Test the ports of the LEGO SPIKE to ensure that the correct 
+    devices are connected to the correct ports.
+"""
 def hub_port_test(z):
     global result_array
     print('\nRunning...')
@@ -138,6 +144,11 @@ def hub_port_test(z):
         return
              
 
+"""
+    Function Name: hub_button_test
+    Function Purpose: Test the buttons on the hub to ensure that they are 
+    functioning properly.
+"""
 def hub_button_test(z):
     global result_array
     print('\nRunning...')
@@ -165,7 +176,12 @@ def hub_button_test(z):
         print('TEST FAILED:', e)
         return
         
-       
+
+"""
+    Function Name: hub_display_test
+    Function Purpose: Test the light matrix on the LEGO SPIKE by displaying a 
+    series of images and text on the hub.
+"""
 def hub_display_test(z):
     global result_array
     print('\nRunning...')
@@ -281,6 +297,11 @@ def hub_display_test(z):
         return
 
 
+"""
+    Function Name: hub_imu_test
+    Function Purpose: Test the Inertial Measurement Unit (IMU) by checking the
+    tap count on the hub.
+"""
 def hub_imu_test(z):
     global result_array
     print('\nRunning...')
@@ -355,7 +376,11 @@ def hub_imu_test(z):
         print('TEST FAILED:', e)
         return
      
-     
+
+"""
+    Function Name: distance_sensor_test
+    Function Purpose: Check the lights and distance readings on the distance sensor.
+"""
 def distance_sensor_test(z):
     global result_array
     print('\nRunning...')
@@ -391,6 +416,11 @@ def distance_sensor_test(z):
     print('TEST PASSED: Moving onto Parallel Motor test...')
 
 
+"""
+    Function Name: motor_parallel_test
+    Function Purpose: Run the two motors together both extents of the rig to check 
+    behavior when skipping and stopping.
+"""
 def motor_parallel_test(z):
     global result_array
     print('\nRunning...')
@@ -435,6 +465,10 @@ def motor_parallel_test(z):
     print('TEST PASSED: Moving onto Force Sensor test...')
 
 
+"""
+    Function Name: fofce_sensor_test
+    Function Purpose: Ensure force sensor functionality by pressing it
+"""
 def force_sensor_test(z):
     global result_array
     print('\nRunning...')
@@ -472,6 +506,11 @@ def force_sensor_test(z):
     print('TEST PASSED: Moving onto Color Sensor and Light Matrix test...')
 
 
+"""
+    Function Name: color_sensor_light_matrix_test
+    Function Purpose: Test the color sensor and light matrix by displaying colors 
+    reading and displaying 'slide' colors on the light matrix.
+"""
 def color_sensor_light_matrix_test(z):
     global result_array
     print('\nRunning...')
@@ -544,6 +583,11 @@ def color_sensor_light_matrix_test(z):
     print('TEST PASSED: Moving onto Independent Motor test...')
     
     
+"""
+    Function Name: motor_independent_test
+    Function Purpose: Test the motors by running them in independtly of eachother
+    and ensuring that after the tests they return to the same position.
+"""
 def motor_independent_test(z):
     global result_array
     print('\nRunning...')
@@ -644,6 +688,10 @@ def motor_independent_test(z):
     print('TEST PASSED: TESTING COMPLETE!')
 
 
+"""
+    Function Name: print_results
+    Function Purpose: Print the results of the tests to the console.
+"""
 def print_results():
     global result_array
     print('\n\n*****************************RESULTS***************************\n')
