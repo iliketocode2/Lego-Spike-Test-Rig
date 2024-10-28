@@ -1,7 +1,9 @@
-# Spike_Firmware_Rig.py
-# Date: 10/28/24
-# Author: Tufts CEEO - William Goldman
-# Purpose: Run multiple tests on the LEGO SPIKE to ensure that sensors and motors run properly with new firmware
+"""
+    Spike_Firmware_Rig.py
+    Date: 10/28/24
+    Author: Tufts CEEO - William Goldman
+    Purpose: Run multiple tests on the LEGO SPIKE to ensure that sensors and motors run properly with new firmware
+"""
 
 # Motor pair in C, E
 # Light Matrix in A
@@ -18,6 +20,11 @@ motor_left, motor_right, dis, forceS, sensor, matrix = 0, 0, 0, 0, 0, 0
 
 result_array = [0] * 10 
 
+
+"""
+    Function Name: intro
+    Function Purpose: Initializes the test environment and prompts the user to begin testing.
+"""
 def intro(z):
     global result_array
 
@@ -611,11 +618,11 @@ def motor_independent_test(z):
         time.sleep(1)
         
         while True:
-            response = input('Do the green motor position markers align?\n')
+            response = input('Do the green motor position markers align? (y/n)\n')
             
             while (not((response.lower() == 'y') or (response.lower() == 'n'))):
                 print ("You DID NOT respond with a valid character")
-                response = input('Do the green motor position markers align?\n')
+                response = input('Do the green motor position markers align? (y/n)\n')
                 
             if response.lower() == 'n':
                 print("ERROR: Motor malfunction determined by user testing.")
@@ -628,7 +635,7 @@ def motor_independent_test(z):
 
     # ---------------------------------
         
-#     TODO: print('TEST PASSED: Moving onto Gyroscope Motor test...')
+    # TODO: print('TEST PASSED: Moving onto Gyroscope Motor test...')
 
     # ---------------------------------
     
@@ -639,17 +646,19 @@ def motor_independent_test(z):
 
 def print_results():
     global result_array
-    print('\nResults:')
-
+    print('\n\n*****************************RESULTS***************************\n')
+    
     errors = ["Hub Port Error", "Hub Button Error", "Hub Display Error", 
               "Hub IMU Error", "Distance Sensor Error", "Parallel Motor Error",
               "Force Sensor Error", "Color Sensor Error", "Independent Motor Error"]
 
     for i in range(1, 10):
         if result_array[i] == 1:
-            print(f'Test {i} PASSED')
+            print(f'* Test {i} PASSED')
         else:
-            print(f'* Test {i} FAILED * --> {errors[i-1]}')
+            print(f'* * Test {i} FAILED * --> {errors[i-1]}')
+            
+    print('\n***************************************************************')
 
 async def main():
     intro(0)
