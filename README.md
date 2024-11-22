@@ -2,7 +2,7 @@
 With the implementation of the new LEGO SPIKE firmware, it is necessary to run tests on motors and sensors to ensure that the new firmware on your hub has been properly installed. This repository contains all of the resources necessary for you to build a test rig and run code on a hub to check its functionality.
 
 ## Important Links: 
-- [Building and Testing Instructables Page](https://www.instructables.com/LEGO-SPIKE-Firmware-Testing-Rig/)!
+- [Building and Testing Instructables Page](https://www.instructables.com/LEGO-SPIKE-Firmware-Testing-Rig/)! (Currently inactive link -- moving soon)
 - [Website with Test Software](https://iliketocode2.pyscriptapps.com/firmware-rig-feedback/latest/)
 - Building instructions are listed above in the repo's files.
 
