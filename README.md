@@ -11,7 +11,7 @@ With the implementation of the new LEGO SPIKE firmware, it is necessary to run t
 |:---:|:---:|:---:|
 |![130_1x](https://github.com/user-attachments/assets/fddae056-db02-40d4-b702-33e7c25be732)|||
 > [!IMPORTANT] 
-> 1. In order to build the kit, a single SPIKE PRIME is necessary for the majority of the parts. However, certain pieces (ex: 2780 pin) require additional kits to complete the rig. 
+> 1. In order to build the kit, a single SPIKE PRIME is necessary for the majority of the parts. HOWEVER, certain pieces (ex: 2780 pin) require additional kits to complete the rig. 
 > 2. Some pieces listed above may not be the exact color available in the SPIKE PRIME kit. Pay attention to the part numbers.
 
 ### Completed Build:
